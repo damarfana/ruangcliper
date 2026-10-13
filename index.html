@@ -2,133 +2,347 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RuangClip - Privacy Policy</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #263244;
-      line-height: 1.7;
-      margin: 0;
-    }
-    header {
-      background: #0759c7;
-      color: white;
-      padding: 35px 20px;
-      text-align: center;
-    }
-    main {
-      max-width: 850px;
-      margin: 30px auto;
-      padding: 30px;
-      background: white;
-      border-radius: 12px;
-    }
-    h2 { color: #0759c7; margin-top: 30px; }
-    a { color: #0759c7; }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #667085;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RuangClip adalah platform untuk membantu pengelolaan dan publikasi konten Facebook Page melalui integrasi Meta API.">
+<title>RuangClip - Content Management Platform</title>
+
+<style>
+* { box-sizing: border-box; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #263449;
+  background: #f5f8fc;
+  line-height: 1.7;
+}
+
+nav {
+  background: #081a35;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a {
+  color: #d5e5ff;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+nav a:hover { color: #39c6ff; }
+
+.hero {
+  background: linear-gradient(135deg, #071a38, #0759bd, #087fca);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0 0 15px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #d8eaff;
+  font-size: 17px;
+}
+
+.hero .tag {
+  display: inline-block;
+  padding: 7px 18px;
+  background: rgba(255,255,255,.13);
+  border-radius: 30px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #20c5ef;
+  color: #062143;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 22px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  color: #0759bd;
+  font-size: 29px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.05);
+}
+
+.card h3 { color: #0759bd; }
+
+.policy {
+  background: white;
+  padding: 35px;
+  margin-top: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.04);
+}
+
+.policy h2 { color: #0759bd; }
+.policy h3 { margin-top: 25px; }
+
+footer {
+  background: #081a35;
+  color: #c7d8ef;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #56caff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.small {
+  font-size: 13px;
+  color: #77869b;
+}
+
+@media(max-width:600px) {
+  .hero h1 { font-size: 34px; }
+  nav { justify-content: center; }
+  nav a { margin: 5px; }
+  .policy { padding: 22px; }
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <h1>RuangClip</h1>
-  <p>Privacy Policy & Data Deletion</p>
+<nav>
+  <a class="logo" href="#home">RuangClip</a>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#deletion">Data Deletion</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <span class="tag">CONTENT MANAGEMENT PLATFORM</span>
+  <h1>Welcome to RuangClip</h1>
+  <p>
+    A simple platform designed to help manage and publish
+    digital content to Facebook Pages through authorized
+    Meta API integrations.
+  </p>
+  <a class="button" href="#about">Explore RuangClip</a>
 </header>
 
-<main>
-  <section id="privacy-policy">
+<section class="container" id="about">
+  <div class="section-title">
+    <h2>About RuangClip</h2>
+    <p>Making digital content management simpler.</p>
+  </div>
+
+  <div class="card">
+    <p>
+      RuangClip is a content management application designed
+      to support the management and publication of digital
+      content on Facebook Pages.
+    </p>
+    <p>
+      The application uses authorized Meta APIs to perform
+      supported content management and publishing operations.
+      Access depends on the permissions granted by the user
+      and Meta's platform requirements.
+    </p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="section-title">
+    <h2>Our Purpose</h2>
+    <p>Supporting a more practical content workflow.</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Content Management</h3>
+      <p>Help organize and manage digital content.</p>
+    </div>
+
+    <div class="card">
+      <h3>Content Publishing</h3>
+      <p>Support publishing content to authorized Facebook Pages.</p>
+    </div>
+
+    <div class="card">
+      <h3>API Integration</h3>
+      <p>Connect supported application functions with Meta APIs.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="privacy">
+  <div class="policy">
     <h2>Privacy Policy</h2>
-    <p>Last updated: October 13, 2026</p>
+    <p class="small">Last updated: October 13, 2026</p>
 
     <p>
-      RuangClip is an application used to help manage and
-      publish content to Facebook Pages through Meta's
-      authorized APIs.
+      This Privacy Policy explains how RuangClip handles
+      information when users interact with the application.
     </p>
 
     <h3>1. Information We Access</h3>
     <p>
-      Depending on the permissions granted by the user,
-      RuangClip may access Facebook Page information,
-      Page access tokens, and content information needed
-      to publish or manage posts.
+      Depending on the permissions granted, RuangClip may
+      access Facebook Page information, access tokens,
+      account-related identifiers, and content information
+      required to provide its features.
     </p>
 
-    <h3>2. How Information Is Used</h3>
+    <h3>2. How We Use Information</h3>
     <p>
-      Information accessed by RuangClip is used only
-      to provide the application's content management
-      and publishing functions.
+      Information is used to support application functions,
+      including authorized Facebook Page management and
+      content publishing.
     </p>
 
-    <h3>3. Data Sharing</h3>
+    <h3>3. Information Sharing</h3>
     <p>
       RuangClip does not sell personal information.
-      Information is shared with Meta only as necessary
-      to provide Facebook API functionality.
+      Information may be processed or transmitted through
+      Meta services when necessary to provide the requested
+      API functionality.
     </p>
 
     <h3>4. Data Security</h3>
     <p>
-      Reasonable measures should be implemented to
-      protect access credentials and information
-      handled by the application.
+      Appropriate security measures should be applied to
+      protect information and access credentials handled
+      by the application.
     </p>
 
     <h3>5. Data Retention</h3>
     <p>
-      Information is retained only for as long as
-      necessary to provide the application's services
-      or meet applicable legal requirements.
+      Information should only be retained for as long as
+      necessary to provide the application's functions
+      or comply with applicable legal obligations.
     </p>
 
-    <h3>6. Contact</h3>
+    <h3>6. User Rights</h3>
     <p>
-      For privacy questions, contact the application
-      administrator through the contact information
-      provided in the application.
+      Users may request information about their data or
+      request deletion of information associated with
+      their use of RuangClip.
     </p>
-  </section>
 
-  <hr>
+    <h3>7. Third-Party Services</h3>
+    <p>
+      RuangClip integrates with Meta platforms. The use
+      of Facebook and related services is also subject
+      to Meta's own privacy policies and terms.
+    </p>
 
-  <section id="data-deletion">
+    <h3>8. Contact</h3>
+    <p>
+      For privacy questions or requests, please contact
+      the RuangClip administrator using the contact
+      information registered in the application.
+    </p>
+  </div>
+</section>
+
+<section class="container" id="deletion">
+  <div class="policy">
     <h2>Data Deletion Instructions</h2>
 
     <p>
-      Users may request deletion of information
-      associated with their use of RuangClip.
+      RuangClip respects users' rights to request deletion
+      of information associated with their use of the
+      application.
     </p>
 
     <h3>How to Request Data Deletion</h3>
     <ol>
-      <li>Send a deletion request to the application administrator.</li>
-      <li>Include your Facebook account name and relevant details.</li>
-      <li>Specify that you want your RuangClip-related data deleted.</li>
+      <li>Contact the RuangClip application administrator.</li>
+      <li>Identify your Facebook account and the relevant Page, if applicable.</li>
+      <li>Explain that you are requesting deletion of your RuangClip-related data.</li>
+      <li>The administrator will review and process the request.</li>
     </ol>
 
+    <h3>Processing of Requests</h3>
     <p>
       Requests will be reviewed and processed within
-      30 days, subject to applicable legal requirements.
+      30 days after sufficient information is received,
+      subject to applicable legal requirements.
     </p>
 
+    <h3>Revoking Application Access</h3>
     <p>
-      Deleting the application or revoking its Facebook
-      permissions can also be done through your
-      Facebook account settings.
+      Users can also remove RuangClip's access through
+      their Facebook account settings, where available.
+      Revoking access does not automatically guarantee
+      deletion of previously stored information.
     </p>
-  </section>
-</main>
+
+    <h3>Questions</h3>
+    <p>
+      For data deletion requests, contact the RuangClip
+      administrator through the contact information
+      provided in the application.
+    </p>
+  </div>
+</section>
 
 <footer>
-  &copy; 2026 RuangClip. All rights reserved.
+  <h2>RuangClip</h2>
+  <p>Content Management & Publishing Platform</p>
+  <p>
+    <a href="#home">Home</a>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#deletion">Data Deletion</a>
+  </p>
+  <p class="small">
+    &copy; 2026 RuangClip. All rights reserved.
+  </p>
 </footer>
 
 </body>
